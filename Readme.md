@@ -66,9 +66,9 @@
 - **geoip-asn.dat**
     - [https://raw.githubusercontent.com/runetfreedom/russia-blocked-geoip/release/geoip-asn.dat](https://raw.githubusercontent.com/runetfreedom/russia-blocked-geoip/release/geoip-asn.dat)
     - [https://cdn.jsdelivr.net/gh/runetfreedom/russia-blocked-geoip@release/geoip-asn.dat](https://cdn.jsdelivr.net/gh/runetfreedom/russia-blocked-geoip@release/geoip-asn.dat)
-- **geoip-only-blocked.dat**
-    - [https://raw.githubusercontent.com/runetfreedom/russia-blocked-geoip/release/geoip-only-blocked.dat](https://raw.githubusercontent.com/runetfreedom/russia-blocked-geoip/release/geoip-only-blocked.dat)
-    - [https://cdn.jsdelivr.net/gh/runetfreedom/russia-blocked-geoip@release/geoip-only-blocked.dat](https://cdn.jsdelivr.net/gh/runetfreedom/russia-blocked-geoip@release/geoip-only-blocked.dat)
+- **geoip-ru-only.dat**
+    - [https://raw.githubusercontent.com/runetfreedom/russia-blocked-geoip/release/geoip-ru-only.dat](https://raw.githubusercontent.com/runetfreedom/russia-blocked-geoip/release/geoip-ru-only.dat)
+    - [https://cdn.jsdelivr.net/gh/runetfreedom/russia-blocked-geoip@release/geoip-ru-only.dat](https://cdn.jsdelivr.net/gh/runetfreedom/russia-blocked-geoip@release/geoip-ru-only.dat)
 - **ru-blocked.dat**
     - [https://raw.githubusercontent.com/runetfreedom/russia-blocked-geoip/release/ru-blocked.dat](https://raw.githubusercontent.com/runetfreedom/russia-blocked-geoip/release/ru-blocked.dat)
     - [https://cdn.jsdelivr.net/gh/runetfreedom/russia-blocked-geoip@release/ru-blocked.dat](https://cdn.jsdelivr.net/gh/runetfreedom/russia-blocked-geoip@release/ru-blocked.dat)
@@ -84,9 +84,9 @@
 - **Country-asn.mmdb**
     - [https://raw.githubusercontent.com/runetfreedom/russia-blocked-geoip/release/Country-asn.mmdb](https://raw.githubusercontent.com/runetfreedom/russia-blocked-geoip/release/Country-asn.mmdb)
     - [https://cdn.jsdelivr.net/gh/runetfreedom/russia-blocked-geoip@release/Country-asn.mmdb](https://cdn.jsdelivr.net/gh/runetfreedom/russia-blocked-geoip@release/Country-asn.mmdb)
-- **Country-only-blocked.mmdb**
-    - [https://raw.githubusercontent.com/runetfreedom/russia-blocked-geoip/release/Country-only-blocked.mmdb](https://raw.githubusercontent.com/runetfreedom/russia-blocked-geoip/release/Country-only-blocked.mmdb)
-    - [https://cdn.jsdelivr.net/gh/runetfreedom/russia-blocked-geoip@release/Country-only-blocked.mmdb](https://cdn.jsdelivr.net/gh/runetfreedom/russia-blocked-geoip@release/Country-only-blocked.mmdb)
+- **Country-ru-only.mmdb**
+    - [https://raw.githubusercontent.com/runetfreedom/russia-blocked-geoip/release/Country-ru-only.mmdb](https://raw.githubusercontent.com/runetfreedom/russia-blocked-geoip/release/Country-ru-only.mmdb)
+    - [https://cdn.jsdelivr.net/gh/runetfreedom/russia-blocked-geoip@release/Country-ru-only.mmdb](https://cdn.jsdelivr.net/gh/runetfreedom/russia-blocked-geoip@release/Country-ru-only.mmdb)
 
 
 # Credits 
