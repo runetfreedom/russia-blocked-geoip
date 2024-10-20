@@ -39,7 +39,7 @@
 
 - `geoip.dat`, `Country.mmdb` - содержит полный набор данных (оригинальный geoip + все категории)
 - `geoip-asn.dat`, `Country-asn.mmdb` - содержит **только** дополнительные категории
-- `geoip-only-blocked.dat`, `Country-only-blocked.mmdb` - содержит **только** списки заблокированных сетей и адресов
+- `geoip-ru-only.dat`, `Country-ru-only.mmdb` - содержит **только** списки заблокированных сетей и адресов
 - `ru-blocked.dat`, `ru-blocked-community.dat` - отдельно соответствующие категории (только geoip.dat формат)
 - `private.dat` - Приватные/Зарезервированные сети ([RFC6890](https://datatracker.ietf.org/doc/html/rfc6890))
 

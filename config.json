@@ -91,7 +91,7 @@
       "action": "output",
       "args": {
         "outputDir": "./output",
-        "outputName": "geoip-only-blocked.dat",
+        "outputName": "geoip-ru-only.dat",
         "wantedList": ["ru-blocked", "ru-blocked-community"]
       }
     },
@@ -159,7 +159,7 @@
       "action": "output",
       "args": {
         "outputDir": "./output",
-        "outputName": "Country-only-blocked.mmdb",
+        "outputName": "Country-ru-only.mmdb",
         "wantedList": ["ru-blocked", "ru-blocked-community"]
       }
     },
