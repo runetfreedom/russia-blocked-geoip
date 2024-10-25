@@ -32,6 +32,14 @@
       }
     },
     {
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "re-filter",
+        "uri": "https://raw.githubusercontent.com/1andrevich/Re-filter-lists/refs/heads/main/ipsum.lst"
+      }
+    },
+    {
       "type": "maxmindGeoLite2ASNCSV",
       "action": "add",
       "args": {
@@ -92,7 +100,7 @@
       "args": {
         "outputDir": "./output",
         "outputName": "geoip-ru-only.dat",
-        "wantedList": ["ru-blocked", "ru-blocked-community"]
+        "wantedList": ["ru-blocked", "ru-blocked-community", "re-filter", "private"]
       }
     },
     {
@@ -101,7 +109,7 @@
       "args": {
         "outputDir": "./output",
         "oneFilePerList": true,
-        "wantedList": ["ru-blocked", "ru-blocked-community", "private"]
+        "wantedList": ["ru-blocked", "ru-blocked-community", "re-filter", "private"]
       }
     },
     {
@@ -160,7 +168,7 @@
       "args": {
         "outputDir": "./output",
         "outputName": "Country-ru-only.mmdb",
-        "wantedList": ["ru-blocked", "ru-blocked-community"]
+        "wantedList": ["ru-blocked", "ru-blocked-community", "re-filter", "private"]
       }
     },
     {

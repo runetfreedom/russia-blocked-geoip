@@ -2,7 +2,7 @@
 
 Этот проект каждые 6 часов автоматически генерирует GeoIP файлы, в которые включены списки заблокированных Роскомнадзором адресов и подсетей для различного рода маршрутизаторов трафика и Proxy/VPN приложений.
 
-Источником данных на данный момент является [antifilter.download](https://antifilter.download/) и [community.antifilter.download](https://community.antifilter.download/)
+Основным источником данных на данный момент является [antifilter.download](https://antifilter.download/) и [community.antifilter.download](https://community.antifilter.download/)
 
 На данный момент поддерживаются следующие выходные форматы:
 
@@ -21,6 +21,7 @@
 
 - `ru-blocked` содержит `ipresolve.lst` и `subnet.lst` сервиса antifilter.download
 - `ru-blocked-community` содержит `community.lst` сервиса community.antifilter.download
+- `re-filter` содержит `ipsum.lst` из [re:filter](https://github.com/1andrevich/Re-filter-lists)
 
 Для вашего удобства в файлы включены несколько дополнительных категорий:
 
@@ -40,7 +41,7 @@
 - `geoip.dat`, `Country.mmdb` - содержит полный набор данных (оригинальный geoip + все категории)
 - `geoip-asn.dat`, `Country-asn.mmdb` - содержит **только** дополнительные категории
 - `geoip-ru-only.dat`, `Country-ru-only.mmdb` - содержит **только** списки заблокированных сетей и адресов
-- `ru-blocked.dat`, `ru-blocked-community.dat` - отдельно соответствующие категории (только geoip.dat формат)
+- `ru-blocked.dat`, `ru-blocked-community.dat`, `re-filter.dat` - отдельно соответствующие категории (только geoip.dat формат)
 - `private.dat` - Приватные/Зарезервированные сети ([RFC6890](https://datatracker.ietf.org/doc/html/rfc6890))
 
 ### Содержимое директорий
@@ -75,6 +76,9 @@
 - **ru-blocked-community.dat**
     - [https://raw.githubusercontent.com/runetfreedom/russia-blocked-geoip/release/ru-blocked-community.dat](https://raw.githubusercontent.com/runetfreedom/russia-blocked-geoip/release/ru-blocked-community.dat)
     - [https://cdn.jsdelivr.net/gh/runetfreedom/russia-blocked-geoip@release/ru-blocked-community.dat](https://cdn.jsdelivr.net/gh/runetfreedom/russia-blocked-geoip@release/ru-blocked-community.dat)
+- **re-filter.dat**
+    - [https://raw.githubusercontent.com/runetfreedom/russia-blocked-geoip/release/re-filter.dat](https://raw.githubusercontent.com/runetfreedom/russia-blocked-geoip/release/re-filter.dat)
+    - [https://cdn.jsdelivr.net/gh/runetfreedom/russia-blocked-geoip@release/re-filter.dat](https://cdn.jsdelivr.net/gh/runetfreedom/russia-blocked-geoip@release/re-filter.dat)
 - **private.dat**
     - [https://raw.githubusercontent.com/runetfreedom/russia-blocked-geoip/release/private.dat](https://raw.githubusercontent.com/runetfreedom/russia-blocked-geoip/release/private.dat)
     - [https://cdn.jsdelivr.net/gh/runetfreedom/russia-blocked-geoip@release/private.dat](https://cdn.jsdelivr.net/gh/runetfreedom/russia-blocked-geoip@release/private.dat)
