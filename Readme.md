@@ -92,6 +92,13 @@
     - [https://raw.githubusercontent.com/runetfreedom/russia-blocked-geoip/release/Country-ru-only.mmdb](https://raw.githubusercontent.com/runetfreedom/russia-blocked-geoip/release/Country-ru-only.mmdb)
     - [https://cdn.jsdelivr.net/gh/runetfreedom/russia-blocked-geoip@release/Country-ru-only.mmdb](https://cdn.jsdelivr.net/gh/runetfreedom/russia-blocked-geoip@release/Country-ru-only.mmdb)
 
+## Cмежные проекты
+
+- [@runetfreedom/russia-v2ray-rules-dat](https://github.com/runetfreedom/russia-v2ray-rules-dat) - единый источник geo файлов для v2ray/xray/sing-box
+- [@runetfreedom/russia-blocked-geosite](https://github.com/runetfreedom/russia-blocked-geosite) - генерация geosite файлов
+- [@runetfreedom/russia-v2ray-custom-routing-list](https://github.com/runetfreedom/russia-v2ray-custom-routing-list) - правила маршрутизации для различных клиентов
+- [@runetfreedom/geodat2srs](https://github.com/runetfreedom/geodat2srs) - конвертер geoip/geosite.dat в sing-box srs
+
 
 # Credits 
 
