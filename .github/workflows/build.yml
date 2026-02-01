@@ -78,22 +78,12 @@ jobs:
             echo "" >> "$out"
 
             awk -v list="$list" '
-              function emit(addr) {
-                if (addr ~ /^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+(\/[0-9]+)?$/) {
-                  printf("/ip firewall address-list add list=%s address=%s comment=rbgeoip timeout=2d\n", list, addr)
-                }
-              }
-              /^[[:space:]]*$/ { next }
-              /^[[:space:]]*#/ { next }
-              $1 == "deny" {
-                gsub(";", "", $2)
-                emit($2)
-                next
-              }
               {
-                gsub(/[[:space:]]+/, "", $0)
-                emit($0)
+                while (match($0, /([0-9]+\.[0-9]+\.[0-9]+\.[0-9]+\/[0-9]+)/, m)) {
+                printf("/ip firewall address-list add list=%s address=%s comment=rbgeoip timeout=2d\n", list, m[1])
+                $0 = substr($0, RSTART+RLENGTH)
               }
+            }
             ' "$in"
           }
 
