@@ -64,6 +64,45 @@ jobs:
             sha256sum ${name} > ./${name}.sha256sum
           done
 
+      - name: Generate .rsc from all lists
+        run: |
+          cd ./output || exit 1
+          mkdir -p mikrotik
+          gen_rsc() {
+            local in="$1"
+            local out="$2"
+            local list="$3"
+
+            echo "# Generated: $(date -u +'%Y-%m-%dT%H:%M:%SZ')" > "$out"
+            echo "# Source: $in" >> "$out"
+            echo "" >> "$out"
+
+            awk -v list="$list" '
+              function emit(addr) {
+                if (addr ~ /^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+(\/[0-9]+)?$/) {
+                  printf("/ip firewall address-list add list=%s address=%s comment=rbgeoip timeout=2d\n", list, addr)
+                }
+              }
+              /^[[:space:]]*$/ { next }
+              /^[[:space:]]*#/ { next }
+              $1 == "deny" {
+                gsub(";", "", $2)
+                emit($2)
+                next
+              }
+              {
+                gsub(/[[:space:]]+/, "", $0)
+                emit($0)
+              }
+            ' "$in"
+          }
+
+          for name in $(ls text/*.txt); do
+            gen_rsc "$name" "mikrotik/$name.rsc" "$LIST_NAME"
+          done
+          
+          ls -1 mikrotik
+
       - name: Git push assets to "release" branch
         run: |
           cd output || exit 1
