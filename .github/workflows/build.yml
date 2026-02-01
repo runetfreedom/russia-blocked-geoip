@@ -96,7 +96,7 @@ jobs:
               base="$(basename "$f")"
               list="${base%.*}"              # list=имя_файла_без_расширения
               out="mikrotik/${list}.rsc"     # кладём плоско в mikrotik/
-              gen_rsc "$f" "$out" "$LIST_NAME"
+              gen_rsc "$f" "$out" "VPN"
             done < <(find text -type f \( -name "*.txt" -o -name "*.lst" \) | sort)
           fi
 
