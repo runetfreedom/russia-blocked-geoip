@@ -5,11 +5,16 @@ on:
     - cron: "0 3,9,15,21 * * *"
   push:
     branches:
-      - master
+      - main
     paths-ignore:
       - ".gitignore"
       - "LICENSE*"
       - "*.md"
+permissions:
+  contents: write
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   build:
     name: Build
